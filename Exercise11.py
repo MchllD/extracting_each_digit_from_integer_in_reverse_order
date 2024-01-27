@@ -14,3 +14,8 @@
 # Sample number
 # Result
 
+
+# ********************************* actual code ****************************************************
+def extract_digits_reverse_loop(number):
+    # Initialize an empty list to store reversed digits
+    reversed_digits = []
