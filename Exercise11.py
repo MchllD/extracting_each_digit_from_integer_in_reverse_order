@@ -25,3 +25,16 @@ def extract_digits_reverse_loop(number):
         digit = number % 10 # Extract the last digit
         reversed_digits.append(str(digit))  # Convert digit to string and add to the list
         number //= 10  # Remove the last digit from the number
+        
+    # Join the reversed digits and print the result
+    result = ' '.join(reversed(reversed_digits))
+    print(result)
+    
+# Example usage:
+number_example_1 = 7536
+extract_digits_reverse_loop(number_example_1)
+
+number_example_2 = 12345
+extract_digits_reverse_loop(number_example_2)
+
+    
