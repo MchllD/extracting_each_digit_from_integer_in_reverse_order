@@ -19,3 +19,8 @@
 def extract_digits_reverse_loop(number):
     # Initialize an empty list to store reversed digits
     reversed_digits = []
+    
+    # Iterate through each digit in reverse order
+    while number > 0:
+        digit = number % 10 # Extract the last digit
+        
