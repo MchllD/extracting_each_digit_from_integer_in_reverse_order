@@ -23,4 +23,5 @@ def extract_digits_reverse_loop(number):
     # Iterate through each digit in reverse order
     while number > 0:
         digit = number % 10 # Extract the last digit
-        
+        reversed_digits.append(str(digit))  # Convert digit to string and add to the list
+        number //= 10  # Remove the last digit from the number
