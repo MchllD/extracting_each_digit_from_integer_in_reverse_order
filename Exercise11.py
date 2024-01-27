@@ -19,22 +19,22 @@
 def extract_digits_reverse_loop(number):
     # Initialize an empty list to store reversed digits
     reversed_digits = []
-    
+
     # Iterate through each digit in reverse order
     while number > 0:
-        digit = number % 10 # Extract the last digit
+        digit = number % 10  # Extract the last digit
         reversed_digits.append(str(digit))  # Convert digit to string and add to the list
         number //= 10  # Remove the last digit from the number
-        
-    # Join the reversed digits and print the result
-    result = ' '.join(reversed(reversed_digits))
-    print(result)
-    
-# Example usage:
+
+    # Print the reversed digits
+    print(" ".join(reversed_digits))
+
+# Sample number
 number_example_1 = 7536
 extract_digits_reverse_loop(number_example_1)
 
 number_example_2 = 12345
 extract_digits_reverse_loop(number_example_2)
+
 
     
